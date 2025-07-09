@@ -13,3 +13,6 @@ if result != -1:
     print(f"the {targetVal} found at index : {result}")
 else:
     print(f"The {targetVal} not found")
+
+
+
