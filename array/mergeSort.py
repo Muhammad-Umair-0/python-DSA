@@ -72,5 +72,5 @@ def nergeSort(arr1):
 
 
 arr_ = [3, 7, 6, -10, 15, 23.5, 55, -13]
-sortedArr = mergeSort(arr_)
+sortedArr = nergeSort(arr_)
 print("Sorted array:", sortedArr)
