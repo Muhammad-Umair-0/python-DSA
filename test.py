@@ -1,52 +1,11 @@
-class Node:
-    def __init__(self,data):
-        self.data = data
-        self.next = None 
-    
-def traverseAndPrint(head):
-    currentNode = head
-    while currentNode:
-        print(currentNode.data, end="-->")
-        currentNode  = currentNode.next
-    print("Null")
+# Get the Unicode code point of 'A'
+code_point_A = ord('A')
+print(f"The Unicode code point of 'A' is: {code_point_A}")
 
+# Get the Unicode code point of a special character
+code_point_dollar = ord('$')
+print(f"The Unicode code point of '$' is: {code_point_dollar}")
 
-def insertNodeatPosition(head, newNode, position):
-    if position ==1:
-        newNode.next = head
-        return newNode
-    
-    currentNode = head
-    for _ in range(position-2):
-        if currentNode is None:
-            break
-        currentNode = currentNode.next
-
-    newNode.next = currentNode.next
-    currentNode.next = newNode
-    return head
-
-
-
-node1 = Node(7)
-node2 = Node(11)
-node3 = Node(3)
-node4 = Node(2)
-node5 = Node(9)
-
-node1.next = node2
-node2.next = node3
-node3.next = node4
-node4.next = node5
-
-
-print(" Origional list: ")
-traverseAndPrint(node1)
-
-
-
-# deletion of nod
-newNode = Node(97)
-node1 = insertNodeatPosition(node1,newNode,4)
-print("\n after insertion ")
-traverseAndPrint(node1)
+# Get the Unicode code point of a non-ASCII character
+code_point_c_cedilla = ord('ç')
+print(f"The Unicode code point of 'ç' is: {code_point_c_cedilla}")
